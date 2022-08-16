@@ -309,8 +309,18 @@ ul {
   letter-spacing: 0.03em;
   margin-top: 10px;
   margin-bottom: 28px;
+} 
+.team-section-background {
+  display: flex;
+  justify-content: center;
+  background-color: #F5F4FA;
+  margin: 0;
+  width: 100%;
 }
+.team-section-container {
+  width: 1200px;
 
+}
 .adress {
   color: var(--white-text-color);
 }
@@ -523,16 +533,22 @@ ul {
   stroke: ffffff;
   fill: #ffffff;
 }
+.clients-container {
+  padding-top: 50px;
+  padding-bottom: 94px
+}
 
 .clients-section {
-  gap: 30px;
+  padding-left: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: nowrap;
+ 
 }
 .clients-section > li > a {
   display: block;
+  box-sizing: border-box;
   padding: 16px 32px;
   border: 2px solid #afb1b8;
   border-radius: 4px;
