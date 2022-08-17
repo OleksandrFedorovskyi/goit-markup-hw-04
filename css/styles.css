@@ -138,7 +138,7 @@ ul {
 .header-icon :hover,
 .header-icon :focus {
   color: var(--accent-text-color);
-  stroke: var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
 
 .clients-icon {
