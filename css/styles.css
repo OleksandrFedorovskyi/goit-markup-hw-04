@@ -97,6 +97,7 @@ ul {
   margin-right: 50px;
 }
 
+
 .header-group {
   display: flex;
   flex-wrap: nowrap;
@@ -134,12 +135,15 @@ ul {
   margin-right: 50px;
 }
 .header-links a:hover,
-.header-links a:focus,
-.header-icon :hover,
-.header-icon :focus {
+.header-links a:focus {
   color: var(--accent-text-color);
-  fill: var(--accent-text-color);
+  
 }
+.rightside-links a:hover .header-icon ,
+.rightside-links a:focus .header-icon{
+  fill: #2196f3;
+}
+
 
 .clients-icon {
   fill: #afb1b8;
@@ -229,6 +233,7 @@ ul {
   line-height: 30px;
   letter-spacing: 0.03em;
   padding-top: 4px;
+  color: var(--primary-text-color);
 }
 
 .benefits-section {
@@ -280,6 +285,10 @@ ul {
 }
 
 .team-card {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -292,9 +301,6 @@ ul {
   width: 270px;
   left: 1115px;
   top: 1632px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  padding-right: 10px;
 }
 
 .team {
@@ -373,8 +379,9 @@ ul {
   gap: 30px;
   padding-left: 0;
   width: 100%;
+ 
 }
-.filter-content > li:hover {
+.filter-focus:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -479,7 +486,8 @@ ul {
   height: 70px;
 }
 .icon-container {
-  padding: 25px 0;
+    width: 270px;
+      height: 120px;
   display: flex;
   justify-content: center;
   background-color: #f5f4fa;
@@ -498,8 +506,7 @@ ul {
   justify-content: center;
 }
 .socials {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 0;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -542,15 +549,15 @@ ul {
   padding-left: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: nowrap;
- 
+  gap: 30px;
 }
 .clients-section > li > a {
   display: block;
   box-sizing: border-box;
   padding: 16px 32px;
-  border: 2px solid #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 .clients-section > li > a:hover,
